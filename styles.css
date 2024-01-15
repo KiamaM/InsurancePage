@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-
+    background-color: rgb(247, 244, 244);
 }
 
 .container{
@@ -45,7 +45,7 @@ body{
 
 .member button{
     height: 40px;
-    background-color:rgb(125, 188, 248);
+    background-color:#409cf1;
     border-radius: 5px;
 }
 
@@ -123,18 +123,26 @@ body{
     margin-bottom: 70px;
 }
 
+button{
+    color: white;
+}
+
 .more button{
     height: 35px;
 }
 
 #Quote{
-    border-radius: 20px;
-    background-color:rgb(125, 188, 248);
+    border-radius: 30px;
+    background-color:#409cf1;
+    width: 200px;
+    height: 60px;
 }
 
 #learn{
-    border-radius: 25px;
+    border-radius: 30px;
     background-color: transparent;
+    width: 200px;
+    height: 60px;
 }
 
 .packages{
@@ -145,6 +153,11 @@ body{
     gap: 20px;
     /* border: 1px solid blue;   */
     padding: 30px 70px 30px 30px;
+}
+
+.packages h4{
+
+    font-size: 25px;
 }
 
 .packages img{
@@ -161,8 +174,14 @@ body{
 
 .package2{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
     gap:30px;
+    margin-top: 100px;
     margin-bottom: 200px;
+    background-color: white;
+    width: 100%;
 }
 
 .product{
@@ -198,8 +217,12 @@ body{
 .rev{
     display: flex;
     flex-direction: column;
+    padding-top: 30px;
     align-items: center;
     margin-top: 100px;
+    height: 300px;
+    width: 300px;
+    background-color: white;
 }
 
 .rev p{
@@ -226,7 +249,7 @@ body{
 }
 
 .subscribe button{
-    background-color:rgb(125, 188, 248);
+    background-color:#409cf1;
 }
 
 .subscribe input{
@@ -327,7 +350,7 @@ body{
     padding-bottom: 30px;
     width: 300px;
     border-radius: 10px;
-    border: 1px solid rgb(125, 188, 248);
+    border: 1px solid #409cf1;
 }
 
 .green{
@@ -364,14 +387,14 @@ body{
     width: 220px;
     height: 40px;
     border-radius: 5px;
-    background-color:rgb(125, 188, 248);
+    background-color:#409cf1;
     margin-top: 20px;
 }
 
 .branches{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
     width: 100vw;
     padding-left: 500px;
     padding-right: 400px;
@@ -381,14 +404,15 @@ body{
     color: white;
     margin-top: 100px;
     margin-bottom: 400px;
+    padding-top: 200px;
 }
-
 .dsc{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* border: 1px solid blue; */
+    justify-content: flex-start;
+    /* border: 1px solid yellow; */
     width: 400px;
+    
 }
 
 .book{
@@ -397,11 +421,12 @@ body{
     margin-bottom: 100px;
     background-color: white;
     position: absolute;
-    top:3400px
+    top:4000px;
+    width: 50%;
 }
 
 .book button{
-    background-color:rgb(125, 188, 248);
+    background-color:#409cf1;
     height: 40px;
     border-radius: 5px;
 }
@@ -465,7 +490,7 @@ form select{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:rgb(125, 188, 248);
+    background-color:#409cf1;
 }
 
 .qlink{
@@ -483,7 +508,12 @@ form select{
 }
 
 .footer{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
     margin-top: 50px;
+    /* background-color: white;
+    width: 100%; */
 }
 
 .quickLinks div{
@@ -496,7 +526,7 @@ form select{
 }
 
 .blue{
-    background-color:rgb(125, 188, 248);    
+    background-color:#409cf1;    
 }
 
 .white, .blue{
@@ -504,4 +534,14 @@ form select{
     flex-direction: column;
     width: 200px;
     padding: 30px;
+}
+
+#standard, #free{
+    margin-top: 30px;
+    background-color: white;
+}
+
+.follow{
+    display: flex;
+    gap:10px;
 }
