@@ -1,5 +1,7 @@
 body{
     margin: 0px;
+    padding: 0px; 
+    overflow-x: hidden;
     background-color: rgb(247, 244, 244);
 }
 
@@ -8,68 +10,77 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100vw;
+    /* border: 1px solid blue;  */
+
+    
 }
 
 .navbar{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "logo links links member";
+    display: flex;
+    justify-content: space-around;
     /* border: 1px solid blue;  */
     margin-top: 0px;
+    width: 90vw;
 }
 
 .logo{
-    grid-area: logo;
+    width: 10%;
 }
 
 .links{
-    grid-area: links;
     display: flex;
     justify-content: flex-start;
+    width: 40%;
     align-items: center;
-    gap: 20px;
+    gap: 2rem;
 }
 
 .member{
-    grid-area: member;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 2rem;
 }
 
 .member .button{
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    gap: 10px;
-}
-
-.member button{
-    height: 40px;
+    gap: 2rem;
+    height: 4rem;
+    width: 15rem;
     background-color:#409cf1;
-    border-radius: 5px;
+    border-radius: 0.5rem;
+    border: none;
 }
 
 .top{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 200px; 
-    height: 600px;
+    justify-content: space-between;
+    align-items: center; */
+    margin-bottom: 12rem; 
+    height: 57rem;
     background-image: url('hero.png');
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover; 
     color: white;
+    /* border: 1px solid blue;  */
+    width: 100%;
+
 }
     
 
 .about{
-    padding: 0px 600px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    /* border: 1px solid blue;  */
+
+    
 }
 
 .us{
@@ -78,25 +89,20 @@ body{
     justify-content: center;
 }
 
-.about > h1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 80%;
-    padding: 30px;
-    font-size: 50px;
+.about > h1{   
+    width: 50%; 
+    font-size: 70px;
     font-weight:bolder;
     /* border: 1px solid blue; */
     
-}
+} 
 
-.about > p{
+.about  p{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    font-size: 15px;
-    margin-bottom: 0%;
-    padding: 0px 30px;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 25px;
     /* font-weight:bolder; */
     /* border: 1px solid blue; */
     
@@ -104,7 +110,7 @@ body{
 
 #p2{
     margin-top: 0%;
-    margin-bottom: 25px;
+    margin-bottom: 2rem;
     /* display: flex;
     justify-content: center; */
 }
@@ -119,8 +125,8 @@ body{
 .more{
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-bottom: 70px;
+    gap: 1rem;
+    margin-bottom: 5rem;
 }
 
 button{
@@ -128,31 +134,47 @@ button{
 }
 
 .more button{
-    height: 35px;
+    height: 2.5rem;
 }
 
 #Quote{
-    border-radius: 30px;
-    background-color:#409cf1;
-    width: 200px;
-    height: 60px;
+    border-radius: 2rem;
+    background-color:transparent;
+    width: 15rem;
+    height: 4rem;
+    border: none;
 }
 
 #learn{
-    border-radius: 30px;
-    background-color: transparent;
-    width: 200px;
-    height: 60px;
+    border-radius: 2rem;
+    background-color:transparent;
+    width: 15rem;
+    height: 4rem;
+    border: none;
+}
+
+#learn:hover{
+    background-color: #409cf1;
+}
+
+#Quote:hover{
+    background-color: #409cf1;
 }
 
 .packages{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: absolute;
-    top: 500px;
-    gap: 20px;
-    /* border: 1px solid blue;   */
-    padding: 30px 70px 30px 30px;
+    top: 95vh; 
+    left: 25vw;
+    /* margin-top: 100px; */
+    gap: 2rem;
+
+}
+
+.white:hover{
+    background-color: #409cf1;
 }
 
 .packages h4{
@@ -296,10 +318,10 @@ button{
     align-items: center;
 }
 
-#premium{
+/* #premium{
     background-color: rgb(29, 5, 51);
     color: white;
-}
+} */
 
 .feature{
     display: flex;
@@ -339,6 +361,7 @@ button{
     justify-content: center;
     margin-bottom: 20px;
     gap: 10px;
+    color: #409cf1;
 }
 
 .monthly{
@@ -416,29 +439,33 @@ button{
 }
 
 .book{
-    display: flex;    
-    gap: 50px;
+    display: flex; 
+    justify-content: space-between; 
+    /* gap: 50px; */
     margin-bottom: 100px;
     background-color: white;
     position: absolute;
-    top:4000px;
+    top:515vh;
+    /* border: 1px solid yellow; */
+    padding-inline: 0px;
     width: 50%;
 }
 
 .book button{
     background-color:#409cf1;
-    height: 40px;
-    border-radius: 5px;
+    height: 2.8rem;
+    border-radius: 0.2rem;
 }
 
 .form{
     display: flex;
     flex-direction: column; 
-    justify-content: space-around; 
-    padding-right: 30px;
-    padding-top: 5px;
-    width: 400px;
-
+    justify-content: space-between; 
+    padding: 2.4rem;
+    /* align-items: center; */
+    /* gap: 1rem; */
+    /* flex: 0.7; */
+    width: 95rem;
     /* border: 1px solid blue; */
 }
 
@@ -520,28 +547,44 @@ form select{
     margin-bottom: 15px;
 }
 
-.white{
-    background-color: white;
-    color: black;
-}
-
-.blue{
-    background-color:#409cf1;    
-}
-
-.white, .blue{
+.package{
     display: flex;
     flex-direction: column;
     width: 200px;
     padding: 30px;
+    background-color: white;
+    color: black;
 }
 
-#standard, #free{
+.package:hover{
+    background-color:#409cf1;    
+}
+
+.monthly{
     margin-top: 30px;
     background-color: white;
+}
+
+.monthly:hover{
+    background-color: rgb(29, 5, 51);
+    color: white;
+    margin-top: 0px;
 }
 
 .follow{
     display: flex;
     gap:10px;
+}
+.enquire{
+    display: flex;
+    flex-direction: column;
+}
+
+.info{
+    display: flex;
+    gap:10px;
+}
+
+.form-img{
+    width: 15rem;
 }
