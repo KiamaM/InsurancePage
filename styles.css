@@ -1,7 +1,12 @@
-body{
+*{
     margin: 0px;
     padding: 0px; 
+}
+
+body{
     overflow-x: hidden;
+    padding: 0%;
+    width: 100vw;
     background-color: rgb(247, 244, 244);
 }
 
@@ -12,7 +17,6 @@ body{
     justify-content: center;
     width: 100vw;
     /* border: 1px solid blue;  */
-
     
 }
 
@@ -162,7 +166,7 @@ button{
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    top: 95vh; 
+    top: 110vh; 
     left: 25vw;
     width: 50%;
     /* margin-top: 100px; */
@@ -342,7 +346,7 @@ button{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 60%;
+    width: 70%;
     margin-top: 3rem;
     border: 1px solid blue;      
 }
@@ -371,7 +375,7 @@ button{
     align-items: center;
     gap: 2rem;
     padding-bottom: 2rem;
-    width: 100%;
+    width: 30%;
     border-radius: 0.9rem;
     border: 1px solid #409cf1;
 }
@@ -451,7 +455,7 @@ button{
     margin-bottom: 5rem;
     background-color: white;
     position: absolute;
-    top:515vh;
+    top:550vh;
     /* border: 1px solid yellow; */
     padding-inline: 0px;
     width: 50%;
@@ -598,7 +602,17 @@ form select{
     width: 15rem;
 }
 @media only screen and (max-width: 375px){ 
+    body{
+        background-color: red;  
+        overflow-x: hidden;
+        width: 100%;
+
+    }
+
     .links{
         display: none;
     } 
-}
+    /* .navbar{
+        background-color: red;   
+     } */
+} */
