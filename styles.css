@@ -374,13 +374,14 @@ button{
 
 .subscriptions{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     width: 70vw;
     height: 85vh;
     margin-top: 4vh;
     padding-top: 5vh;
-    border: 1px solid blue;      
+    /* border: 1px solid blue;   */
+    gap: 0;    
 }
 
 .des{
@@ -685,6 +686,7 @@ select{
         overflow-x: hidden;
     }
 
+
     .container{
         width: 100vw;
         display: flex;
@@ -714,6 +716,7 @@ select{
         margin-top: 0%;  
         gap: 3vw;
         /* width: 70vw;   */
+        /* flex-wrap: wrap; */
     }
 
     .member .button{
@@ -750,7 +753,7 @@ select{
     .more{
         flex-wrap: wrap;
         width: 100vw;
-        border: 1px solid blue;        
+        /* border: 1px solid blue;         */
     }
 
     #Quote{
@@ -805,11 +808,24 @@ select{
     .book{
         top: 860vh;
         width: 100vw;
+        left: 0vw;    
+    }
+
+    .form{
+        width: 100vw;
+    }
+
+    .book img{
+        display: none;
     }
 
     .subscriptions{
-        width: 90vw;
+        width: 70vw;
         gap: 7vh;
+    }
+
+    .monthly{
+        width: 70vw;
     }
 
     .branches{
@@ -849,7 +865,7 @@ select{
 
     .footer{
         width: 100vw;
-        border: 1px solid blue;  
+        /* border: 1px solid blue;   */
         flex-wrap: wrap;
 
     }
