@@ -19,7 +19,7 @@
                 </div>
                 <div class="member">
                     <div class="login">
-                        <div>login</div>
+                        <span>login</span>
                     </div>
                     <div class="signUp">
                         <button class="button">Become a member <img src="./arrow-right-solid.svg" alt=""></button>
@@ -30,9 +30,9 @@
             <div class="aboutUs">
                 <div class="about">
                         <h1>We Ensure a Best Insurance Service</h1>
-                        <p>We know how large objects will act, but things on a </p>
-                        <div class="part2">
-                            <p id="p2">small scale just do not act that way.</p>
+                        <p>We know how large objects will act, but things on a</p>
+                        <div class="part2" id="p2">
+                            <p>small scale just do not act that way.</p>
                         </div>
                 </div>
 
@@ -43,20 +43,20 @@
             </div>
             <div class="packages">
                 <div class="package">
-                    <img src="./user-group-solid.svg" alt="" width="60">
-                    <h4>Peace of Mind</h4>
+                    <ion-icon name="people-outline"></ion-icon>
+                    <h3>Peace of Mind</h3>
                     <p>the quick fox jumps over the</p>
                     <p>lazy dog</p>
                 </div>
                 <div class="package">
-                    <img src="./user-group-solid.svg" alt="" width="60">
-                    <h4>Set For Life</h4>
+                    <ion-icon name="people-outline"></ion-icon>
+                    <h3>Set For Life</h3>
                     <p>the quick fox jumps over the</p>
                     <p>lazy dog</p>
                 </div>
                 <div class="package">
-                    <img src="./user-group-solid.svg" alt="" width="60">
-                    <h4>100% Satisfaction</h4>
+                    <ion-icon name="people-outline"></ion-icon>
+                    <h3>100% Satisfaction</h3>
                     <p>the quick fox jumps over the</p>
                     <p>lazy dog</p>
                 </div>
@@ -66,19 +66,19 @@
 
         <div class="package2">
             <div class="product">
-                <img src="./book-solid.svg" alt="" width="60" >
+                <ion-icon name="wallet-outline"></ion-icon>
                 <h3>Peace of Mind</h3>
                 <p>So it really behaves like neither</p>
                 <p>now we have given up</p>
             </div>
             <div class="product">
-                <img src="./bookmark-regular.svg" alt="" width="60">
+                <ion-icon name="bookmarks-outline"></ion-icon>
                 <h3>Set For Life</h3>
                 <p>They were used to create the </p>
                 <p>machines that launched</p>
             </div>
             <div class="product">
-                <img src="./user-group-solid.svg" alt="" width="60">
+                <ion-icon name="people-outline"></ion-icon>
                 <h3>100% Satisfaction</h3>
                 <p>So it really behaves like neither</p>
                 <p>now we have given up</p>
@@ -305,8 +305,10 @@
                         <option value="Two">Two</option>
                     </select>
                     <label for="time">Time*</label>
-                    <br>
-                    <input type="time" id="time" placeholder="4:00 Available">
+                    <select name="time" id="time" placeholder="4:00 Available">
+                        <option value="4:00 Available">4:00 Available</option>
+                    </select>
+
                 </form>
                 <button>Book Appointment</button>
             </div>
@@ -349,7 +351,7 @@
                     <div>Live Chat</div>
                     <div>Unlimited support</div>
                 </div>
-                <div class="quickLinks">
+                <div class="quickLinks" id="call">
                     <h4>Get in Touch</h4>
                     <div class="enquire">
                         <div class="info"><img src="./phone-solid.svg" alt="">(480)-555-1234</div>
@@ -373,5 +375,7 @@
         </footer>
 
     </div>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
